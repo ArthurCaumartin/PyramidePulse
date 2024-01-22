@@ -6,7 +6,7 @@
             "id": "99dfbf23-6be8-4fe7-b91d-c99e39bf5d36",
             "actions": [
                 {
-                    "name": "0",
+                    "name": "A",
                     "type": "Button",
                     "id": "87588fdc-0f3a-491d-a1b4-15faaff11665",
                     "expectedControlType": "Button",
@@ -15,7 +15,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "1",
+                    "name": "Z",
                     "type": "Button",
                     "id": "fb4f79dd-6272-4be9-8563-2b5d3943a70a",
                     "expectedControlType": "Button",
@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "2",
+                    "name": "E",
                     "type": "Button",
                     "id": "d31677aa-750d-47b2-8cb2-5aad51d0ddf1",
                     "expectedControlType": "Button",
@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "3",
+                    "name": "R",
                     "type": "Button",
                     "id": "c6db5c2e-dda8-4bdf-a77b-7290534b755d",
                     "expectedControlType": "Button",
@@ -50,7 +50,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "0",
+                    "action": "A",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -61,7 +61,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "1",
+                    "action": "Z",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -72,7 +72,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "2",
+                    "action": "E",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -83,7 +83,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "3",
+                    "action": "R",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
