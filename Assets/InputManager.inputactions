@@ -1,0 +1,94 @@
+{
+    "name": "InputManager",
+    "maps": [
+        {
+            "name": "Keyboard",
+            "id": "99dfbf23-6be8-4fe7-b91d-c99e39bf5d36",
+            "actions": [
+                {
+                    "name": "0",
+                    "type": "Button",
+                    "id": "87588fdc-0f3a-491d-a1b4-15faaff11665",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "1",
+                    "type": "Button",
+                    "id": "fb4f79dd-6272-4be9-8563-2b5d3943a70a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "2",
+                    "type": "Button",
+                    "id": "d31677aa-750d-47b2-8cb2-5aad51d0ddf1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "3",
+                    "type": "Button",
+                    "id": "c6db5c2e-dda8-4bdf-a77b-7290534b755d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "26f5cdb2-73df-4815-bb4d-56e5351b74ce",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f815de97-e8ab-4cbf-b0d9-b09535170337",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e23b1ce-2912-4f77-bce2-7de5f718be56",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5251ed2d-b070-46df-8dd7-55c7b755f0b9",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

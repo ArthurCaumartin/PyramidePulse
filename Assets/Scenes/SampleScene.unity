@@ -123,6 +123,167 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8645372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8645373}
+  m_Layer: 0
+  m_Name: Chords
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8645373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8645372}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.89, y: -1.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2091289647}
+  - {fileID: 1111829930}
+  - {fileID: 1947496948}
+  - {fileID: 1898359637}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &10980952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10980955}
+  - component: {fileID: 10980953}
+  m_Layer: 0
+  m_Name: PlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &10980953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10980952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 3da70936719bd6c4786001160e18f54d, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1898359638}
+        m_TargetAssemblyTypeName: ChordController, Assembly-CSharp
+        m_MethodName: ChordPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 87588fdc-0f3a-491d-a1b4-15faaff11665
+    m_ActionName: Keyboard/0[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1947496949}
+        m_TargetAssemblyTypeName: ChordController, Assembly-CSharp
+        m_MethodName: ChordPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fb4f79dd-6272-4be9-8563-2b5d3943a70a
+    m_ActionName: Keyboard/1[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1111829931}
+        m_TargetAssemblyTypeName: ChordController, Assembly-CSharp
+        m_MethodName: ChordPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d31677aa-750d-47b2-8cb2-5aad51d0ddf1
+    m_ActionName: Keyboard/2[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2091289648}
+        m_TargetAssemblyTypeName: ChordController, Assembly-CSharp
+        m_MethodName: ChordPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c6db5c2e-dda8-4bdf-a77b-7290534b755d
+    m_ActionName: Keyboard/3[/Keyboard/r]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Keyboard
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!4 &10980955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10980952}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192936771
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +715,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1111829929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1111829930}
+  - component: {fileID: 1111829931}
+  m_Layer: 0
+  m_Name: Chord2
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1111829930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111829929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8645373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1111829931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111829929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e372858e577f2d4ebeba379cb015222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  spawnPoint: {x: 0, y: 0}
+  objectToSpawn: {fileID: 192936771}
 --- !u!1 &1209695545
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +812,147 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1898359636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1898359637}
+  - component: {fileID: 1898359638}
+  m_Layer: 0
+  m_Name: Chord0
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1898359637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898359636}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8645373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1898359638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898359636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e372858e577f2d4ebeba379cb015222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  spawnPoint: {x: 0, y: 0}
+  objectToSpawn: {fileID: 192936771}
+--- !u!1 &1947496947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947496948}
+  - component: {fileID: 1947496949}
+  m_Layer: 0
+  m_Name: Chord1
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947496948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947496947}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8645373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947496949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947496947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e372858e577f2d4ebeba379cb015222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  spawnPoint: {x: 0, y: 0}
+  objectToSpawn: {fileID: 192936771}
+--- !u!1 &2091289646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091289647}
+  - component: {fileID: 2091289648}
+  m_Layer: 0
+  m_Name: Chord3
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2091289647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091289646}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8645373}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2091289648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091289646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e372858e577f2d4ebeba379cb015222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 3
+  spawnPoint: {x: 0, y: 0}
+  objectToSpawn: {fileID: 192936771}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -613,3 +962,5 @@ SceneRoots:
   - {fileID: 1209695547}
   - {fileID: 380295610}
   - {fileID: 192936773}
+  - {fileID: 10980955}
+  - {fileID: 8645373}
