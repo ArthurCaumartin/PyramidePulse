@@ -22,10 +22,15 @@ public class NoteBehavior : MonoBehaviour
 
             if (_time >= _timeKillTrigger)
             {
-                _noteManager.RemoveNoteFromList(this.gameObject);
+                //_noteManager.RemoveNoteFromList(this.gameObject);
                 Destroy(this.gameObject);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        _noteManager.RemoveNoteFromList(this.gameObject);
     }
 
     public void Initialize(Vector2 spawn, Vector2 target, float travelDuration, NoteManager noteManager)

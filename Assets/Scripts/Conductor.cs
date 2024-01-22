@@ -1,4 +1,5 @@
-    using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 //* Source : https://www.gamedeveloper.com/audio/coding-to-the-beat---under-the-hood-of-a-rhythm-game-in-unity
@@ -9,6 +10,7 @@ using UnityEngine.Events;
 
 public class Conductor : MonoBehaviour
 {
+    public List<ScriptableMusic> musicList;
     public static Conductor instance;
     [Header("Song Infos :")]
     [SerializeField] float songBpm;
@@ -27,6 +29,8 @@ public class Conductor : MonoBehaviour
     void Awake()
     {
         instance = this;
+        musicSource.clip = musicList[0].music;
+        songBpm = musicList[0].BPM;
         //! Durée en seconde entre les beats
         secPerBeat = 60 / songBpm;
 
