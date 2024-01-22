@@ -9,7 +9,7 @@ using UnityEngine.Events;
 
 public class Conductor : MonoBehaviour
 {
-    public static Conductor manager;
+    public static Conductor instance;
     [Header("Song Infos :")]
     [SerializeField] float songBpm;
     float secPerBeat;
@@ -26,11 +26,7 @@ public class Conductor : MonoBehaviour
 
     void Awake()
     {
-        manager = this;
-    }
-
-    void Start()
-    {
+        instance = this;
         //! Durée en seconde entre les beats
         secPerBeat = 60 / songBpm;
 
@@ -55,7 +51,7 @@ public class Conductor : MonoBehaviour
             //! renvoie 1 ou 2
             // OnBoucleCompleted.Invoke((int)songPositionInBeats % 2);
             OnBoucleCompleted.Invoke();
-            print("loop beat");
+            //print("loop beat");
         }
 
         loopPositionInBeats = songPositionInBeats - completedLoops * beatsPerLoop;
