@@ -40,7 +40,7 @@ public class ChordController : MonoBehaviour
             if(noteBehaviours.Count > 0)
             {
                 float distance = Vector3.Distance(transform.position, noteBehaviours[0].transform.position);
-                print("distance : " + distance);
+                //print("distance : " + distance);
                 NoteManager.instance.OnInputPressed(index, noteBehaviours[0], distance);
             }
             else
