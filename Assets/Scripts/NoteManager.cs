@@ -24,7 +24,7 @@ public class NoteManager : MonoBehaviour
             GameManager.instance.DeacreaseKingAffection();
     }
 
-    public void OnInputPressed(int index, NoteBehavior note = null)
+    public void OnInputPressed(int index, NoteBehavior note = null, float distance = 1000)
     {
         if(note == null)
         {
@@ -34,8 +34,9 @@ public class NoteManager : MonoBehaviour
         else
         {
             GameManager.instance.IncreaseKingAffection();
+            GameManager.instance.AddScore(distance);
             Destroy(note.gameObject);
-            print(index);
+            // print(index);
         }
     }
 
