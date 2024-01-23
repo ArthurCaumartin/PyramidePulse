@@ -25,6 +25,7 @@ public class Conductor : MonoBehaviour
     float loopPositionInBeats;
     [SerializeField] AudioSource musicSource;
     public UnityEvent OnBoucleCompleted;
+    private bool canPlay = true;
 
     void Awake()
     {
@@ -42,6 +43,10 @@ public class Conductor : MonoBehaviour
 
     void Update()
     {
+        if(!canPlay)
+            return;
+
+        print(AudioSettings.dspTime);
         //! determine how many seconds since the song started
         songPositionInSecond = (float)(AudioSettings.dspTime - dspSongTime);
 
@@ -69,5 +74,15 @@ public class Conductor : MonoBehaviour
     public float GetSecondPerBeat()
     {
         return secPerBeat;
+    }
+
+    public void Pause(bool value)
+    {
+        canPlay = !value;
+
+        if(value)
+            musicSource.Pause();
+        else
+            musicSource.UnPause();
     }
 }
