@@ -8,8 +8,6 @@ public class ChordController : MonoBehaviour
     public int index;
     public Vector2 spawnPoint;
     public List<NoteBehavior> noteBehaviours;
-    public Transform Point; //� virer
-    public float distance;//� virer
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,16 +26,6 @@ public class ChordController : MonoBehaviour
             noteBehaviours.Remove(note);
         }
     }
-
-    // private void OnDrawGizmos()//� virer
-    // {
-    //     if(!Point)
-    //         return;
-    //     Gizmos.color = Color.red;//� virer
-    //     Gizmos.DrawLine(transform.position, Point.position);//� virer
-    //     Handles.Label(transform.position, Vector2.Distance(transform.position, Point.position).ToString());//� virer
-    //     //� virer
-    // }//� virer
 
     private void Awake()
     {

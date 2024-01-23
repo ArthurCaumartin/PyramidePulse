@@ -34,7 +34,7 @@ public class NoteManager : MonoBehaviour
         else
         {
             GameManager.instance.IncreaseKingAffection();
-            GameManager.instance.AddScore(distance);
+            GameManager.instance.AddScore(distance, chordControllers[index].transform.position);
             Destroy(note.gameObject);
             // print(index);
         }
