@@ -5,6 +5,7 @@ public class NoteManager : MonoBehaviour
 {
     public static NoteManager instance;
     public List<GameObject> notesList;
+    public List<Sprite> spriteList;
     [SerializeField] private ChordController[] chordControllers;
     [SerializeField] private GameObject notePrefab;
 
@@ -46,5 +47,6 @@ public class NoteManager : MonoBehaviour
         GameObject actualObject = Instantiate(notePrefab, transform);
         actualObject.GetComponent<NoteBehavior>().Initialize(chordControllers[index].spawnPoint, chordControllers[index].transform.position, Conductor.instance.GetSecondPerBeat(), this);
         notesList.Add(actualObject);
+        actualObject.GetComponentInChildren<SpriteRenderer>().sprite = spriteList[index];
     }
 }
