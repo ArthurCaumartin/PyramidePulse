@@ -3,6 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    [SerializeField] private CanvasManager canvasManager;
     public float kingAffectionChangeValue = 0.05f;
     public float kingAffection = 0.5f;
     public int totalScore;
@@ -11,6 +12,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
+        canvasManager.SetAffectionFill(kingAffection);
     }
 
     public void increaseCombo()
@@ -26,6 +32,7 @@ public class GameManager : MonoBehaviour
     public void IncreaseKingAffection()
     {
         kingAffection += kingAffectionChangeValue;
+        canvasManager.SetAffectionFill(kingAffection);
 
         if(kingAffection > 1)
         {
@@ -36,6 +43,7 @@ public class GameManager : MonoBehaviour
     public void DeacreaseKingAffection()
     {
         kingAffection -= kingAffectionChangeValue;
+        canvasManager.SetAffectionFill(kingAffection);
 
         if (kingAffection < 0)
         {
