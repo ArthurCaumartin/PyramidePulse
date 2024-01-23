@@ -113,10 +113,10 @@ TextureImporter:
       name: GAME JAM BOUTON_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3318
-        height: 1995
+        x: 1680
+        y: 3471
+        width: 3329
+        height: 1637
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: GAME JAM BOUTON_1
       rect:
         serializedVersion: 2
-        x: 3485
-        y: 1346
-        width: 632
-        height: 649
+        x: 5172
+        y: 4816
+        width: 637
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: GAME JAM BOUTON_2
       rect:
         serializedVersion: 2
-        x: 3493
-        y: 0
-        width: 631
-        height: 1213
+        x: 5176
+        y: 3918
+        width: 640
+        height: 658
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,6 +168,342 @@ TextureImporter:
       bones: []
       spriteID: 192b8e8b99d321d4ba5eb172e039a63a
       internalID: 1714406877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2008
+        width: 434
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4516ed049841e554fb8d724b9d78cd53
+      internalID: 1308974727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_4
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 2008
+        width: 316
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894228bd41ad00d458122b097845ea8f
+      internalID: 1063849698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_5
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 2008
+        width: 359
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd673159d7c20c248965a9fe5a872733
+      internalID: 1274360403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_6
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1995
+        width: 425
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047846815f458124f9e7bd8e463ffb3c
+      internalID: -1520433102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_7
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 2008
+        width: 394
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c94583467e43fa4aac564a1542fc05f
+      internalID: 1085631208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_8
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 2008
+        width: 399
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00223fed83f32604d944b466bca9427e
+      internalID: -30721846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_9
+      rect:
+        serializedVersion: 2
+        x: 3003
+        y: 2010
+        width: 429
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57958741c58f7d4bb32e2feb8ed3749
+      internalID: 71559191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_10
+      rect:
+        serializedVersion: 2
+        x: 3533
+        y: 2008
+        width: 377
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c350cd613c91f544b0905775273c1ca
+      internalID: 1055083089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_11
+      rect:
+        serializedVersion: 2
+        x: 4024
+        y: 2004
+        width: 398
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac662f54e53375e498d7cb30554a043c
+      internalID: 1356982644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_12
+      rect:
+        serializedVersion: 2
+        x: 4530
+        y: 2008
+        width: 405
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb511e3e5154944793d89a3648a8c5a
+      internalID: 1999924967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_13
+      rect:
+        serializedVersion: 2
+        x: 5710
+        y: 1999
+        width: 412
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1b0c6e6a56b4549b96694ae7b9460d
+      internalID: 715691668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_14
+      rect:
+        serializedVersion: 2
+        x: 6560
+        y: 2057
+        width: 386
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c7423e28bb55f47b8af7d1355dbab2
+      internalID: -134387566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 2349
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905721d0c1dc43141838b2e16cb74631
+      internalID: 1521554434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_18
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 20
+        width: 1805
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab437cf6444a3046b6b90379700e2e4
+      internalID: -678373959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_23
+      rect:
+        serializedVersion: 2
+        x: 4507
+        y: 0
+        width: 2220
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b2aaaa7de63b343ad178384e92a869
+      internalID: -1034395075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GAME JAM BOUTON_24
+      rect:
+        serializedVersion: 2
+        x: 6915
+        y: 68
+        width: 1415
+        height: 709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbae82c43c1896f459273716c28ff8df
+      internalID: 317391735
       vertices: []
       indices: 
       edges: []
@@ -185,7 +521,29 @@ TextureImporter:
     nameFileIdTable:
       GAME JAM BOUTON_0: 369482902
       GAME JAM BOUTON_1: -1218794952
+      GAME JAM BOUTON_10: 1055083089
+      GAME JAM BOUTON_11: 1356982644
+      GAME JAM BOUTON_12: 1999924967
+      GAME JAM BOUTON_13: 715691668
+      GAME JAM BOUTON_14: -134387566
+      GAME JAM BOUTON_15: -1363473082
+      GAME JAM BOUTON_16: 1521554434
+      GAME JAM BOUTON_17: 808473566
+      GAME JAM BOUTON_18: -678373959
+      GAME JAM BOUTON_19: 838632594
       GAME JAM BOUTON_2: 1714406877
+      GAME JAM BOUTON_20: -545505511
+      GAME JAM BOUTON_21: -595954166
+      GAME JAM BOUTON_22: -1710482720
+      GAME JAM BOUTON_23: -1034395075
+      GAME JAM BOUTON_24: 317391735
+      GAME JAM BOUTON_3: 1308974727
+      GAME JAM BOUTON_4: 1063849698
+      GAME JAM BOUTON_5: 1274360403
+      GAME JAM BOUTON_6: -1520433102
+      GAME JAM BOUTON_7: 1085631208
+      GAME JAM BOUTON_8: -30721846
+      GAME JAM BOUTON_9: 71559191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
