@@ -13,12 +13,15 @@ public class NoteManager : MonoBehaviour
         instance = this;
     }
 
-    public void RemoveNoteFromList(GameObject objectToRemove)
+    public void RemoveNoteFromList(GameObject objectToRemove, bool isSeflDestroy = false)
     {
         if (notesList.Count > 0)
         {
             notesList.Remove(objectToRemove);
         }
+
+        if(isSeflDestroy)
+            GameManager.instance.DeacreaseKingAffection();
     }
 
     public void OnInputPressed(int index, NoteBehavior note = null)
