@@ -30,7 +30,7 @@ public class NoteManager : MonoBehaviour
         if(note == null)
         {
             GameManager.instance.DeacreaseKingAffection();
-            print("pas de note");
+            //print("pas de note");
         }
         else
         {

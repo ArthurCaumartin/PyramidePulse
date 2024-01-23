@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 550
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,217 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 828
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87c57fe379871fd43852e6d836a9da17
-      internalID: -995005661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_1
-      rect:
-        serializedVersion: 2
-        x: 1074
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2e75b110a7b19640a4b7c4233ac37e7
-      internalID: -1747129304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_2
-      rect:
-        serializedVersion: 2
-        x: 2180
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0609ad20b4cc28048a9609195762ebfb
-      internalID: 1119276846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_3
-      rect:
-        serializedVersion: 2
-        x: 3239
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 657cde742f627e74d9919831e3022b4e
-      internalID: 629219347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_4
-      rect:
-        serializedVersion: 2
-        x: 4292
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0bbcd12c8f623d46a5aa8a6954b5d81
-      internalID: 272687527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_5
-      rect:
-        serializedVersion: 2
-        x: 6856
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7011855c5a9a06c4cb887fa916987bf7
-      internalID: -1235532173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_6
-      rect:
-        serializedVersion: 2
-        x: 7938
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53e2cdee9d4148c4dae29c07553abc9a
-      internalID: 1557067508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_7
-      rect:
-        serializedVersion: 2
-        x: 9044
-        y: 0
-        width: 836
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7732ea67cc663e64598ad6f25f8a2d1f
-      internalID: 726733763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_8
-      rect:
-        serializedVersion: 2
-        x: 10103
-        y: 0
-        width: 835
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85ac97531e3035f438628b23a7a8599f
-      internalID: -62427788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GAME JAM all colonnes_9
-      rect:
-        serializedVersion: 2
-        x: 11156
-        y: 0
-        width: 828
-        height: 2231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40b5c33d156b7764a9239d7f163c5a56
-      internalID: 1457834782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -329,17 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      GAME JAM all colonnes_0: -995005661
-      GAME JAM all colonnes_1: -1747129304
-      GAME JAM all colonnes_2: 1119276846
-      GAME JAM all colonnes_3: 629219347
-      GAME JAM all colonnes_4: 272687527
-      GAME JAM all colonnes_5: -1235532173
-      GAME JAM all colonnes_6: 1557067508
-      GAME JAM all colonnes_7: 726733763
-      GAME JAM all colonnes_8: -62427788
-      GAME JAM all colonnes_9: 1457834782
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -33,11 +33,11 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(float distance, Vector3 chordPosition)
     {
-        print("Add Score : distance = " + distance);
+        //print("Add Score : distance = " + distance);
         if(distance > .5f)
         {
             totalScore += badScore;
-            print("Bad");
+            //print("Bad");
             canvasManager.SetScoreTexte(totalScore, badScore, chordPosition);
             return;
         }
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         if(distance < .5f && distance > .2f)
         {
             totalScore += goodScore;
-            print("Good");
+            //print("Good");
             canvasManager.SetScoreTexte(totalScore, goodScore, chordPosition);
             return;
         }
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
         if(distance < .2f)
         { //! avec 0.07 sa a pas marché ?!
             totalScore += perfectScore;
-            print("Prefect");
+            //print("Prefect");
             canvasManager.SetScoreTexte(totalScore, perfectScore, chordPosition);
             return;
         }
