@@ -29,15 +29,15 @@ public class ChordController : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmos()//� virer
-    {
-        if(!Point)
-            return;
-        Gizmos.color = Color.red;//� virer
-        Gizmos.DrawLine(transform.position, Point.position);//� virer
-        Handles.Label(transform.position, Vector2.Distance(transform.position, Point.position).ToString());//� virer
-        //� virer
-    }//� virer
+    // private void OnDrawGizmos()//� virer
+    // {
+    //     if(!Point)
+    //         return;
+    //     Gizmos.color = Color.red;//� virer
+    //     Gizmos.DrawLine(transform.position, Point.position);//� virer
+    //     Handles.Label(transform.position, Vector2.Distance(transform.position, Point.position).ToString());//� virer
+    //     //� virer
+    // }//� virer
 
     private void Awake()
     {
@@ -51,7 +51,9 @@ public class ChordController : MonoBehaviour
         {
             if(noteBehaviours.Count > 0)
             {
-                NoteManager.instance.OnInputPressed(index, noteBehaviours[0]);
+                float distance = Vector3.Distance(transform.position, noteBehaviours[0].transform.position);
+                print("distance : " + distance);
+                NoteManager.instance.OnInputPressed(index, noteBehaviours[0], distance);
             }
             else
             {

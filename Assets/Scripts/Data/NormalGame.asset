@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: NormalGame
   m_EditorClassIdentifier: 
   music: {fileID: 8300000, guid: 78d7082a8dc31f448bea02f9fe16a433, type: 3}
-  BPM: 140
+  BPM: 60
