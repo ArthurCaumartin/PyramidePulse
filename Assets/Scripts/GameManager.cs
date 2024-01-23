@@ -61,6 +61,8 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseKingAffection()
     {
+        if(kingAffection >= 1)
+            return;
         kingAffection += kingAffectionChangeValue;
         canvasManager.SetAffectionFill(kingAffection);
 

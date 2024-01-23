@@ -41,12 +41,31 @@ public class NoteManager : MonoBehaviour
         }
     }
 
+    //! Call by conductor Event
     public void SpawnNote()
     {
         int index = Random.Range(0, chordControllers.Length);
         GameObject actualObject = Instantiate(notePrefab, transform);
         actualObject.GetComponent<NoteBehavior>().Initialize(chordControllers[index].spawnPoint, chordControllers[index].transform.position, Conductor.instance.GetSecondPerBeat(), this);
         notesList.Add(actualObject);
-        actualObject.GetComponentInChildren<SpriteRenderer>().sprite = spriteList[index];
+
+        if(spriteList.Count > 0)
+            actualObject.GetComponentInChildren<SpriteRenderer>().sprite = spriteList[index];
+    }
+
+    public void PauseNotes()
+    {
+        foreach (var item in notesList)
+        {
+            item.GetComponent<NoteBehavior>().isPaused = true;
+        }
+    }
+
+    public void UnpauseNotes()
+    {
+        foreach (var item in notesList)
+        {
+            item.GetComponent<NoteBehavior>().isPaused = false;
+        }
     }
 }

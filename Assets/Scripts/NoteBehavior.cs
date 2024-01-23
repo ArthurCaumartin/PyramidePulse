@@ -8,9 +8,13 @@ public class NoteBehavior : MonoBehaviour
     [SerializeField] private float _timeKillTrigger;
     [SerializeField] private NoteManager _noteManager;
     private float _time;
+    public bool isPaused = false;
 
     void Update()
     {
+        if(isPaused)
+            return;
+            
         if (_travelDuration <= 0)
         {
             return;
