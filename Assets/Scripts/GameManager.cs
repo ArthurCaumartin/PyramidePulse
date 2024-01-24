@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     public float kingAffectionChangeValue = 0.05f;
     public float kingAffection = 0.5f;
     public int combo;
-
+    public bool canPlayerSpam = false;
+    
     private void Awake()
     {
         instance = this;
@@ -57,6 +58,12 @@ public class GameManager : MonoBehaviour
             canvasManager.SetScoreTexte(totalScore, perfectScore, chordPosition);
             return;
         }
+    }
+
+    public void AddScore(int toAdd, Vector3 chordPosition)
+    {
+        totalScore += toAdd;
+        canvasManager.SetScoreTexte(totalScore, toAdd, chordPosition);
     }
 
     public void IncreaseKingAffection()

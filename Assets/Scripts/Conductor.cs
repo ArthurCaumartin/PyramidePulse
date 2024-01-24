@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,41 +15,45 @@ public class Conductor : MonoBehaviour
     public static Conductor instance;
     [Header("Song Infos :")]
     [SerializeField] float songBpm;
-    float secPerBeat;
-    float songPositionInSecond;
-    float songPositionInBeats;
-    float dspSongTime;
+    public float secPerBeat;
+    public float songPositionInSecond;
+    public float songPositionInBeats;
+    public float dspSongTime;
+    public float dpsPauseDelay;
+    public float startPauseDps;
 
     [Header("Loop :")]
     [SerializeField] float beatsPerLoop;
-    int completedLoops = 0;
-    float loopPositionInBeats;
-    [SerializeField] AudioSource musicSource;
+    public int completedLoops = 0;
+    public float loopPositionInBeats;
+    [SerializeField] AudioSource audioSource;
     public UnityEvent OnBoucleCompleted;
-    private bool canPlay = true;
+    public bool canPlay = true;
 
     void Awake()
     {
         instance = this;
-        musicSource.clip = musicList[0].music;
+        audioSource.clip = musicList[0].music;
         songBpm = musicList[0].BPM;
+
         //! Durée en seconde entre les beats
         secPerBeat = 60 / songBpm;
 
         //! Temps en ?millisecondes? ou la song commence
         dspSongTime = (float)AudioSettings.dspTime;
+        dpsPauseDelay = 0;
+        print(AudioSettings.dspTime);
 
-        musicSource.Play();
+        audioSource.Play();
     }
 
     void Update()
     {
         if(!canPlay)
             return;
-
-        print(AudioSettings.dspTime);
+        // print(AudioSettings.dspTime);
         //! determine how many seconds since the song started
-        songPositionInSecond = (float)(AudioSettings.dspTime - dspSongTime);
+        songPositionInSecond = (float)AudioSettings.dspTime - dspSongTime - dpsPauseDelay;
 
         //! determine how many beats since the song started
         songPositionInBeats = songPositionInSecond / secPerBeat;
@@ -59,6 +64,7 @@ public class Conductor : MonoBehaviour
             completedLoops++;
             //! renvoie 1 ou 2
             // OnBoucleCompleted.Invoke((int)songPositionInBeats % 2);
+
             OnBoucleCompleted.Invoke();
             //print("loop beat");
         }
@@ -81,8 +87,15 @@ public class Conductor : MonoBehaviour
         canPlay = !value;
 
         if(value)
-            musicSource.Pause();
+        {
+            startPauseDps = (float)AudioSettings.dspTime;
+            audioSource.Pause();
+        }
         else
-            musicSource.UnPause();
+        {
+            dpsPauseDelay = (float)AudioSettings.dspTime - startPauseDps;
+            Debug.Log(dpsPauseDelay);
+            audioSource.UnPause();
+        }
     }
 }

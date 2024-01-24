@@ -959,6 +959,7 @@ MonoBehaviour:
   kingAffectionChangeValue: 0.05
   kingAffection: 0.5
   combo: 0
+  canPlayerSpam: 0
 --- !u!114 &1160495442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,8 +1005,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b2ddd75d45234964a953c1efc247af74, type: 2}
   - {fileID: 11400000, guid: a3e131448395281478dfffedfdb7eaab, type: 2}
   songBpm: 117
+  secPerBeat: 0
+  songPositionInSecond: 0
+  songPositionInBeats: 0
+  dspSongTime: 0
+  dpsPauseDelay: 0
+  startPauseDps: 0
   beatsPerLoop: 1
-  musicSource: {fileID: 380295609}
+  completedLoops: 0
+  loopPositionInBeats: 0
+  audioSource: {fileID: 380295609}
   OnBoucleCompleted:
     m_PersistentCalls:
       m_Calls:
@@ -1021,6 +1030,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  canPlay: 1
 --- !u!4 &1209695547
 Transform:
   m_ObjectHideFlags: 0
@@ -1415,17 +1425,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _queenEvent:
-    pauseGame: 5
+    eventDuration: 5
+    pauseGame: 0
     clearNotes: 0
-    canPlayerSpam: 0
+    canPlayerSpam: 1
     entityList:
     - {fileID: 2035214875}
   _quardEvent:
+    eventDuration: 0
     pauseGame: 0
     clearNotes: 0
     canPlayerSpam: 0
     entityList: []
   _kingSlamEvent:
+    eventDuration: 0
     pauseGame: 0
     clearNotes: 0
     canPlayerSpam: 0
