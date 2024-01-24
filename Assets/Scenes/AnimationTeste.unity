@@ -430,9 +430,9 @@ MonoBehaviour:
     m_ActionName: Keyboard/3[/Keyboard/r]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1909259476}
-        m_TargetAssemblyTypeName: EventManager, Assembly-CSharp
-        m_MethodName: PlayQueenEvent
+      - m_Target: {fileID: 1227766447}
+        m_TargetAssemblyTypeName: NoteManager, Assembly-CSharp
+        m_MethodName: KillAllNotes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

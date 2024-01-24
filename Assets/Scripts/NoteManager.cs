@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class NoteManager : MonoBehaviour
 {
@@ -16,15 +17,18 @@ public class NoteManager : MonoBehaviour
 
     public void KillAllNotes()
     {
-        foreach (GameObject note in notesList)
+        if(notesList.Count != 0)
         {
-            note.GetComponent<NoteBehavior>().KillNote();
+            foreach (GameObject note in notesList)
+            {
+                note.GetComponent<NoteBehavior>().KillNote();
+            }
         }
     }
 
     public void RemoveNoteFromList(GameObject objectToRemove, bool isSeflDestroy = false)
     {
-        if (notesList.Count > 0)
+        if (notesList.Count > 0 && notesList.Contains(objectToRemove))
         {
             notesList.Remove(objectToRemove);
         }

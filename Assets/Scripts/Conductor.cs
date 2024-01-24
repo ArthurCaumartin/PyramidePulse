@@ -42,7 +42,7 @@ public class Conductor : MonoBehaviour
         //! Temps en ?millisecondes? ou la song commence
         dspSongTime = (float)AudioSettings.dspTime;
         dpsPauseDelay = 0;
-        print(AudioSettings.dspTime);
+        //print(AudioSettings.dspTime);
 
         audioSource.Play();
     }

@@ -1,5 +1,8 @@
 using UnityEngine;
 using DG.Tweening;
+using TreeEditor;
+using Unity.VisualScripting;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class NoteBehavior : MonoBehaviour
 {
@@ -8,15 +11,14 @@ public class NoteBehavior : MonoBehaviour
     [SerializeField] private float _travelDuration;
     [SerializeField] private float _timeKillTrigger;
     [SerializeField] private NoteManager _noteManager;
-    [SerializeField] private AnimationCurve yFlollowingCurve;
     private float _time;
     public bool isPaused = false;
 
     void Update()
     {
-        if(isPaused)
+        if (isPaused)
             return;
-            
+
         if (_travelDuration <= 0)
         {
             return;
@@ -29,7 +31,7 @@ public class NoteBehavior : MonoBehaviour
             if (_time >= _timeKillTrigger)
             {
                 _noteManager.RemoveNoteFromList(this.gameObject, true);
-                
+
                 Destroy(this.gameObject);
             }
         }
@@ -38,12 +40,17 @@ public class NoteBehavior : MonoBehaviour
     public void KillNote()
     {
         isPaused = true;
-        Vector2 startPosition = transform.position;
-        DOTween.To((time) =>
-        {
-            startPosition.y = yFlollowingCurve.Evaluate(time);
-            Vector2.Lerp(startPosition, new Vector2(startPosition.x + 1, startPosition.y), time);
-        }, 0f, 1, 0.25f);
+        float xOffset = Random.Range(1, 3);
+        float yOffset = Random.Range(1, 3);
+        transform.DOMove(new Vector2(transform.localPosition.x + xOffset, transform.localPosition.y + yOffset), .25f)
+            .OnComplete(() =>
+            {
+                transform.DOMove(new Vector2(transform.localPosition.x + xOffset / 3, transform.localPosition.y - yOffset * 20), .50f)
+                .OnComplete(() =>
+                {
+                    Destroy(gameObject);
+                });
+            });
     }
 
     private void OnDestroy()
