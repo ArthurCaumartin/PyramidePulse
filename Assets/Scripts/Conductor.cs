@@ -33,6 +33,8 @@ public class Conductor : MonoBehaviour
     void Awake()
     {
         instance = this;
+
+        audioSource = GetComponentInChildren<AudioSource>();
         audioSource.clip = musicList[0].music;
         songBpm = musicList[0].BPM;
 
