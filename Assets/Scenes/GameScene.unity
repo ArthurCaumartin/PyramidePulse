@@ -807,21 +807,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1160495442}
-    - target: {fileID: 5238463756559822217, guid: bbcab0d72c320734f9edc5b619250ab1, type: 3}
-      propertyPath: m_text
-      value: 999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 6556937181245113515, guid: bbcab0d72c320734f9edc5b619250ab1, type: 3}
-      propertyPath: m_Name
-      value: ScoreTarget
-      objectReference: {fileID: 0}
     - target: {fileID: 7917997119689186719, guid: bbcab0d72c320734f9edc5b619250ab1, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518621140739620377, guid: bbcab0d72c320734f9edc5b619250ab1, type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
