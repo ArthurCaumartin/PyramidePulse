@@ -50,6 +50,7 @@ public class EventManager : MonoBehaviour
         {
             _quardEvent.entityList[i].PlayAnimation();
         }
+        NoteManager.instance.KillAllNotes();
     }
 
     void DoEventShit(GameEvent value)

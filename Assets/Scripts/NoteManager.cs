@@ -14,6 +14,14 @@ public class NoteManager : MonoBehaviour
         instance = this;
     }
 
+    public void KillAllNotes()
+    {
+        foreach (GameObject note in notesList)
+        {
+            note.GetComponent<NoteBehavior>().KillNote();
+        }
+    }
+
     public void RemoveNoteFromList(GameObject objectToRemove, bool isSeflDestroy = false)
     {
         if (notesList.Count > 0)
