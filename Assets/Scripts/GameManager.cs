@@ -1,11 +1,11 @@
 using UnityEngine;
 using DG.Tweening;
-using Unity.VisualScripting.Dependencies.Sqlite;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [SerializeField] private CanvasManager canvasManager;
+    [SerializeField] private EventManager eventManager;
     [Header("Score Value :")]
     public int totalScore;
     public int perfectScore;
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public float kingAffection = 0.5f;
     public int combo;
     public bool canPlayerSpam = false;
-    
+
     private void Awake()
     {
         instance = this;
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(float distance, Vector3 chordPosition)
     {
         //print("Add Score : distance = " + distance);
-        if(distance > .5f)
+        if (distance > .5f)
         {
             totalScore += badScore;
             //print("Bad");
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if(distance < .5f && distance > .2f)
+        if (distance < .5f && distance > .2f)
         {
             totalScore += goodScore;
             //print("Good");
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if(distance < .2f)
+        if (distance < .2f)
         { //! avec 0.07 sa a pas marché ?!
             totalScore += perfectScore;
             //print("Prefect");
@@ -68,12 +68,14 @@ public class GameManager : MonoBehaviour
 
     public void IncreaseKingAffection()
     {
-        if(kingAffection >= 1)
-            return;
+        if (kingAffection >= 1)
+        {
+            eventManager.PlayQueenEvent();
+        }
         kingAffection += kingAffectionChangeValue;
         canvasManager.SetAffectionFill(kingAffection);
 
-        if(kingAffection > 1)
+        if (kingAffection > 1)
         {
             Debug.LogWarning("THE QUEEN WILL BEAT UR ASS UP !!!!!!!!!!!!!!!!!!!!!!!!!");
         }

@@ -30,13 +30,12 @@ public class Conductor : MonoBehaviour
     public UnityEvent OnBoucleCompleted;
     public bool canPlay = true;
 
-    void Awake()
+    public void Initialize(int indexOfTheMusic)
     {
-        instance = this;
-
         audioSource = GetComponentInChildren<AudioSource>();
-        audioSource.clip = musicList[0].music;
-        songBpm = musicList[0].BPM;
+        audioSource.Stop();
+        audioSource.clip = musicList[indexOfTheMusic].music;
+        songBpm = musicList[indexOfTheMusic].BPM;
 
         //! Durée en seconde entre les beats
         secPerBeat = 60 / songBpm;
@@ -47,6 +46,13 @@ public class Conductor : MonoBehaviour
         //print(AudioSettings.dspTime);
 
         audioSource.Play();
+    }
+
+    void Awake()
+    {
+        instance = this;
+
+        Initialize(0);
     }
 
     void Update()

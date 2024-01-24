@@ -32,6 +32,7 @@ public class EventManager : MonoBehaviour
             _queenEvent.entityList[i].PlayAnimation();
             DoEventShit(_queenEvent);
         }
+        Conductor.instance.Initialize(1);
     }
 
     [ContextMenu("GuardFallEvent")]

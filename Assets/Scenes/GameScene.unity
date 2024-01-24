@@ -342,6 +342,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &85475679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
+  m_PrefabInstance: {fileID: 7791131305314419508}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7955fe65ba5cb1c408a11190c9abb5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &333777030 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2130510816910471492, guid: bbcab0d72c320734f9edc5b619250ab1, type: 3}
@@ -713,7 +724,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2045d5be863d74d4d9aa511d87b64ccd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1074,6 +1085,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1241891437}
     - target: {fileID: 7950744027997242447, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
+      propertyPath: eventManager
+      value: 
+      objectReference: {fileID: 85475679}
+    - target: {fileID: 7950744027997242447, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
       propertyPath: canvasManager
       value: 
       objectReference: {fileID: 333777030}
@@ -1134,9 +1149,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2624621213736219777, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129829678190801639, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 49
+      objectReference: {fileID: 0}
     - target: {fileID: 3469542978999772677, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_Name
       value: Chord Pivot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3652934980188981813, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652429762656408886, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7731240770282225790, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1177,6 +1208,10 @@ PrefabInstance:
     - target: {fileID: 7731240770282225790, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8116591271595215723, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 49
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
