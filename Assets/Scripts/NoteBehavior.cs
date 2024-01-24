@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class NoteBehavior : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class NoteBehavior : MonoBehaviour
     [SerializeField] private float _travelDuration;
     [SerializeField] private float _timeKillTrigger;
     [SerializeField] private NoteManager _noteManager;
+    [SerializeField] private AnimationCurve yFlollowingCurve;
     private float _time;
 
     void Update()
@@ -27,6 +29,16 @@ public class NoteBehavior : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+    }
+
+    public void AnimeNoteKilled()
+    {
+        Vector2 startPosition = transform.position;
+        DOTween.To((time) =>
+        {
+            startPosition.y = yFlollowingCurve.Evaluate(time);
+            Vector2.Lerp(startPosition, new Vector2(startPosition.x + 1, startPosition.y), time);
+        }, 0f, 1, 0.25f);
     }
 
     private void OnDestroy()
