@@ -8,6 +8,7 @@ public class ChordController : MonoBehaviour
     public int index;
     public Vector2 spawnPoint;
     public List<NoteBehavior> noteBehaviours;
+    private LineRenderer lineRenderer;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,6 +32,13 @@ public class ChordController : MonoBehaviour
     {
         spawnPoint = transform.right * -10;
         spawnPoint.y = transform.position.y;
+    }
+
+    void Start()
+    {
+        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer.SetPosition(0, spawnPoint);
+        lineRenderer.SetPosition(1, transform.position);
     }
 
     public void ChordPressed(InputAction.CallbackContext context)
