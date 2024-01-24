@@ -27,6 +27,12 @@ public class NoteManager : MonoBehaviour
 
     public void OnInputPressed(int index, NoteBehavior note = null, float distance = 1000)
     {
+        if(GameManager.instance.canPlayerSpam)
+        {
+            GameManager.instance.AddScore(10, chordControllers[index].transform.position);
+            return;
+        }
+
         if(note == null)
         {
             GameManager.instance.DeacreaseKingAffection();
@@ -44,6 +50,8 @@ public class NoteManager : MonoBehaviour
     //! Call by conductor Event
     public void SpawnNote()
     {
+        if(GameManager.instance.canPlayerSpam)
+            return;
         int index = Random.Range(0, chordControllers.Length);
         GameObject actualObject = Instantiate(notePrefab, transform);
         actualObject.GetComponent<NoteBehavior>().Initialize(chordControllers[index].spawnPoint, chordControllers[index].transform.position, Conductor.instance.GetSecondPerBeat(), this);

@@ -6,8 +6,13 @@ using UnityEngine;
 [Serializable]
 public class GameEvent
 {
-    public float pauseGame = 0;
+    public float eventDuration;
+    public bool pauseGame;
+
+    //TODO Anim + fct dans noteManager
     public bool clearNotes;
+
+    //TODO Feed back : glow sur les chordes
     public bool canPlayerSpam;
 
     public List<EventEntity> entityList;
@@ -49,10 +54,18 @@ public class EventManager : MonoBehaviour
 
     void DoEventShit(GameEvent value)
     {
-        if(value.pauseGame != 0)
-        {
-            StartCoroutine(GamePause(value.pauseGame));
-        }
+        if(value.pauseGame)
+            StartCoroutine(GamePause(value.eventDuration));
+
+        if(value.canPlayerSpam)
+            StartCoroutine(PlayerSpam(value.eventDuration));
+    }
+
+    IEnumerator PlayerSpam(float time)
+    {
+        GameManager.instance.canPlayerSpam = true;
+        yield return new WaitForSeconds(time);
+        GameManager.instance.canPlayerSpam = false;
     }
 
     IEnumerator GamePause(float time)

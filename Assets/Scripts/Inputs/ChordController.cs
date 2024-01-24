@@ -37,6 +37,8 @@ public class ChordController : MonoBehaviour
     {
         if(context.performed)
         {
+            
+
             if(noteBehaviours.Count > 0)
             {
                 float distance = Vector3.Distance(transform.position, noteBehaviours[0].transform.position);
