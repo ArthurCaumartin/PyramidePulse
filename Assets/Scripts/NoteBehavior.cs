@@ -35,8 +35,9 @@ public class NoteBehavior : MonoBehaviour
         }
     }
 
-    public void AnimeNoteKilled()
+    public void KillNote()
     {
+        isPaused = true;
         Vector2 startPosition = transform.position;
         DOTween.To((time) =>
         {
