@@ -268,6 +268,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8848910792882722732}
+        m_TargetAssemblyTypeName: InputLayerOrder, Assembly-CSharp
+        m_MethodName: changeLayerOrder
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 87588fdc-0f3a-491d-a1b4-15faaff11665
     m_ActionName: Keyboard/0[/Keyboard/q]
   - m_PersistentCalls:
@@ -275,6 +287,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3770917}
         m_TargetAssemblyTypeName: ChordController, Assembly-CSharp
         m_MethodName: ChordPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8848910792882722731}
+        m_TargetAssemblyTypeName: InputLayerOrder, Assembly-CSharp
+        m_MethodName: changeLayerOrder
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -300,6 +324,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8848910792882722730}
+        m_TargetAssemblyTypeName: InputLayerOrder, Assembly-CSharp
+        m_MethodName: changeLayerOrder
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d31677aa-750d-47b2-8cb2-5aad51d0ddf1
     m_ActionName: Keyboard/2[/Keyboard/e]
   - m_PersistentCalls:
@@ -307,6 +343,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1241891437}
         m_TargetAssemblyTypeName: ChordController, Assembly-CSharp
         m_MethodName: ChordPressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8848910792882722729}
+        m_TargetAssemblyTypeName: InputLayerOrder, Assembly-CSharp
+        m_MethodName: changeLayerOrder
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1151,23 +1199,55 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2624621213736219777, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_SortingOrder
-      value: 49
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 3129829678190801639, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_SortingOrder
-      value: 49
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 3469542978999772677, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_Name
       value: Chord Pivot
       objectReference: {fileID: 0}
     - target: {fileID: 3652934980188981813, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 49
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5652429762656408886, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+    - target: {fileID: 3652934980188981813, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_SortingOrder
-      value: 50
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: baseColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: baseColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: baseColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: baseColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: targetColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: targetColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+      propertyPath: targetColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7731240770282225790, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1211,13 +1291,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8116591271595215723, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
       propertyPath: m_SortingOrder
-      value: 49
+      value: 51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+--- !u!114 &8848910792882722729 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4089858982430350533, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+  m_PrefabInstance: {fileID: 8848910792882722724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8848910792882722730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5632987791441914329, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+  m_PrefabInstance: {fileID: 8848910792882722724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8848910792882722731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8542320555455061712, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+  m_PrefabInstance: {fileID: 8848910792882722724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8848910792882722732 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6220646173483209307, guid: 2978462466b51894bb5e45cec3af928c, type: 3}
+  m_PrefabInstance: {fileID: 8848910792882722724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
