@@ -9,6 +9,7 @@ public class NoteManager : MonoBehaviour
     public List<Sprite> spriteList;
     [SerializeField] private ChordController[] chordControllers;
     [SerializeField] private GameObject notePrefab;
+    [SerializeField] private SpriteSwaper playerSpriteSwaper;
 
     private void Awake()
     {
@@ -50,11 +51,11 @@ public class NoteManager : MonoBehaviour
             GameManager.instance.DeacreaseKingAffection();
             //print("pas de note");
         }
-        else
+        else if (note)
         {
             GameManager.instance.IncreaseKingAffection();
             GameManager.instance.AddScore(distance, chordControllers[index].transform.position);
-            
+            playerSpriteSwaper.SwapSprite(index);
             Destroy(note.gameObject);
             // print(index);
         }
