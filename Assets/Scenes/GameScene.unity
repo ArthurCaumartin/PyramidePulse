@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 619998592}
   - component: {fileID: 619998591}
   - component: {fileID: 619998593}
+  - component: {fileID: 619998594}
   m_Layer: 0
   m_Name: Pharaon_Assis_Neutre
   m_TagString: Untagged
@@ -732,6 +733,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8ac066526e06bc640ae3e74c95fac220, type: 3}
   - {fileID: 21300000, guid: 7c87ee29b21d55b4e95269e69e5ca494, type: 3}
   - {fileID: 21300000, guid: 74f463ab5ba02594c9fd5f947b4d413b, type: 3}
+--- !u!114 &619998594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619998590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7b24c38c131de468eb5a0368574079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conductor: {fileID: 0}
+  growingValue: 1.1
+  growingTime: 0.15
 --- !u!1 &959814280
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +994,7 @@ SpriteRenderer:
   m_Size: {x: 3.5432367, y: 5.011429}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1205016520

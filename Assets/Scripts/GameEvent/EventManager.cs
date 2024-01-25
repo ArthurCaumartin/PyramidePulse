@@ -8,6 +8,7 @@ public class GameEvent
 {
     public float eventDuration;
     public bool pauseGame;
+    public bool isAlreadyCalled;
 
     //TODO Anim + fct dans noteManager
     public bool clearNotes;
@@ -27,6 +28,11 @@ public class EventManager : MonoBehaviour
     [ContextMenu("PlayQueenEvent")]
     public void PlayQueenEvent()
     {
+        if(_queenEvent.isAlreadyCalled)
+        {
+            return;
+        }
+        _queenEvent.isAlreadyCalled = true;
         for (int i = 0; i < _queenEvent.entityList.Count; i++)
         {
             _queenEvent.entityList[i].PlayAnimation();
