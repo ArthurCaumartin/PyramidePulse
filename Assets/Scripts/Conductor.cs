@@ -20,6 +20,7 @@ public class Conductor : MonoBehaviour
     public float dspSongTime;
     public float dpsPauseDelay;
     public float startPauseDps;
+    public int musicIndex;
 
     [Header("Loop :")]
     [SerializeField] float beatsPerLoop;
@@ -31,6 +32,7 @@ public class Conductor : MonoBehaviour
 
     public void Initialize(int indexOfTheMusic)
     {
+        musicIndex = indexOfTheMusic;
         audioSource = GetComponentInChildren<AudioSource>();
         audioSource.Stop();
         audioSource.clip = musicList[indexOfTheMusic].music;
@@ -43,6 +45,8 @@ public class Conductor : MonoBehaviour
         dspSongTime = (float)AudioSettings.dspTime;
         dpsPauseDelay = 0;
         //print(AudioSettings.dspTime);
+        songPositionInBeats = 0;
+        completedLoops = 0;
 
         audioSource.Play();
     }
@@ -63,7 +67,7 @@ public class Conductor : MonoBehaviour
         songPositionInSecond = (float)AudioSettings.dspTime - dspSongTime - dpsPauseDelay;
 
         //! determine how many beats since the song started
-        songPositionInBeats = songPositionInSecond / secPerBeat;
+        songPositionInBeats = songPositionInSecond / secPerBeat + musicList[musicIndex].beatOffset;
 
         //* Compare la position du song par rapport au rythme demander pour la boucle
         if(songPositionInBeats >= (completedLoops + 1) * beatsPerLoop)
