@@ -6,6 +6,12 @@ public class ModifyDifficultyLevel : MonoBehaviour
     public ScriptableObjectDifficulty difficultyLevel;
     public TextMeshProUGUI scoreText;
 
+    void Start()
+    {
+        difficultyLevel.DifficultyLevel = 1;
+        scoreText.text = difficultyLevel.DifficultyLevel.ToString();
+    }
+
     public void Increase()
     {
         difficultyLevel.DifficultyLevel++;
