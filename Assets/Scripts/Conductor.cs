@@ -67,7 +67,7 @@ public class Conductor : MonoBehaviour
         songPositionInSecond = (float)AudioSettings.dspTime - dspSongTime - dpsPauseDelay;
 
         //! determine how many beats since the song started
-        songPositionInBeats = songPositionInSecond / secPerBeat + musicList[musicIndex].beatOffset;
+        songPositionInBeats = songPositionInSecond / secPerBeat;
 
         //* Compare la position du song par rapport au rythme demander pour la boucle
         if(songPositionInBeats >= (completedLoops + 1) * beatsPerLoop)
