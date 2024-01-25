@@ -26,7 +26,7 @@ public class Conductor : MonoBehaviour
     public int completedLoops = 0;
     public float loopPositionInBeats;
     [SerializeField] AudioSource audioSource;
-    public UnityEvent OnBoucleCompleted;
+    public UnityEvent<float> OnBoucleCompleted;
     public bool canPlay = true;
 
     public void Initialize(int indexOfTheMusic)
@@ -72,7 +72,7 @@ public class Conductor : MonoBehaviour
             //! renvoie 1 ou 2
             // OnBoucleCompleted.Invoke((int)songPositionInBeats % 2);
 
-            OnBoucleCompleted.Invoke();
+            OnBoucleCompleted.Invoke(secPerBeat);
             //print("loop beat");
         }
 
