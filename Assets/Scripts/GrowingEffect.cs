@@ -7,9 +7,10 @@ using UnityEngine;
 public class GrowingEffect : MonoBehaviour
 {
     public Conductor conductor;
+    public AnimationCurve growingCurve;
     public float growingValue;
     [Tooltip("le temps en sec pour effectuer le grossissement")]
-    public float growingTime;
+    [Range(0,1)] public float growingTime;
 
     private void Start()
     {
@@ -19,7 +20,10 @@ public class GrowingEffect : MonoBehaviour
 
     public void SpriteGrowingEffect(float Time)
     {
-        transform.DOScale(transform.localScale * growingValue, growingTime).SetLoops(2, LoopType.Yoyo);
+        transform.DOScale(transform.localScale * growingValue, growingTime * Time / 2).SetEase(growingCurve).OnComplete(() =>
+        {
+            transform.DOScale(transform.localScale / growingValue, growingTime * Time / 2).SetEase(growingCurve);
+        });
     }
 
 }
