@@ -9,12 +9,9 @@ public class GameEvent
     public float eventDuration;
     public bool pauseGame;
     public bool isAlreadyCalled;
-
-    //TODO Anim + fct dans noteManager
     public bool clearNotes;
-
-    //TODO Feed back : glow sur les chordes
     public bool canPlayerSpam;
+    public bool passLvl2;
 
     public List<EventEntity> entityList;
 }
@@ -28,18 +25,18 @@ public class EventManager : MonoBehaviour
     [ContextMenu("PlayQueenEvent")]
     public void PlayQueenEvent()
     {
+        print("Queen Event");
         if(_queenEvent.isAlreadyCalled)
         {
             return;
         }
 
         _queenEvent.isAlreadyCalled = true;
+        DoEventShit(_queenEvent);
         for (int i = 0; i < _queenEvent.entityList.Count; i++)
         {
             _queenEvent.entityList[i].PlayAnimation();
-            DoEventShit(_queenEvent);
         }
-        Conductor.instance.Initialize(1);
     }
 
     [ContextMenu("GuardFallEvent")]
@@ -68,6 +65,15 @@ public class EventManager : MonoBehaviour
 
         if(value.canPlayerSpam)
             StartCoroutine(PlayerSpam(value.eventDuration));
+
+        if(value.passLvl2)
+            StartCoroutine(StartNextLevel(value.eventDuration));
+    }
+
+    IEnumerator StartNextLevel(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Conductor.instance.Initialize(1);
     }
 
     IEnumerator PlayerSpam(float time)
