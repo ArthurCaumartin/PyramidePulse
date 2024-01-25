@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
 
     public void DeacreaseKingAffection()
     {
+        print("DDDDD");
         kingAffection -= kingAffectionChangeValue;
         canvasManager.SetAffectionFill(kingAffection);
 

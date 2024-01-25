@@ -390,17 +390,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &85475679 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-  m_PrefabInstance: {fileID: 7791131305314419508}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7955fe65ba5cb1c408a11190c9abb5e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &333777030 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2130510816910471492, guid: bbcab0d72c320734f9edc5b619250ab1, type: 3}
@@ -1141,7 +1130,7 @@ GameObject:
   - component: {fileID: 1440901004}
   - component: {fileID: 1440901003}
   m_Layer: 0
-  m_Name: Event Entity
+  m_Name: Queen Event Entity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1681,34 +1670,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.passLvl2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.pauseGame
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.clearNotes
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.canPlayerSpam
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.eventDuration
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.isAlreadyCalled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: _queenEvent.entityList.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1613915395674284522, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
       propertyPath: _queenEvent.entityList.Array.data[0]
       value: 
       objectReference: {fileID: 1440901004}
@@ -1716,10 +1677,6 @@ PrefabInstance:
       propertyPath: playerSpriteSwaper
       value: 
       objectReference: {fileID: 938643138}
-    - target: {fileID: 3141679681325959224, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: inputFeedBackList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3141679681325959224, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
       propertyPath: chordControllers.Array.data[0]
       value: 
@@ -1752,10 +1709,6 @@ PrefabInstance:
       propertyPath: inputFeedBackList.Array.data[3]
       value: 
       objectReference: {fileID: 8848910792882722729}
-    - target: {fileID: 7950744027997242447, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
-      propertyPath: eventManager
-      value: 
-      objectReference: {fileID: 85475679}
     - target: {fileID: 7950744027997242447, guid: a4e01e6a3f791324b9596fa77c6b6861, type: 3}
       propertyPath: spriteSwaper
       value: 
