@@ -5,4 +5,5 @@ public class ScriptableMusic : ScriptableObject
 {
     public AudioClip music;
     public float BPM;
+    public int beatOffset;
 }
