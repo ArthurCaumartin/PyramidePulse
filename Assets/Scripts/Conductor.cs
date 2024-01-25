@@ -76,6 +76,14 @@ public class Conductor : MonoBehaviour
             completedLoops++;
             //! renvoie 1 ou 2
             // OnBoucleCompleted.Invoke((int)songPositionInBeats % 2);
+            if(difficulty.DifficultyLevel <= 0)
+            {
+                difficulty.DifficultyLevel = 1;
+            }
+            else if (difficulty.DifficultyLevel >= 4)
+            {
+                difficulty.DifficultyLevel = 4;
+            }
             for (int i = 0; i < difficulty.DifficultyLevel; i++)
             {
                 OnBoucleCompleted.Invoke(secPerBeat);
