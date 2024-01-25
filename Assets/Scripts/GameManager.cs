@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] private CanvasManager canvasManager;
     [SerializeField] private EventManager eventManager;
+    [SerializeField] private SpriteSwaper spriteSwaper;
     [Header("Score Value :")]
     public int totalScore;
     public int perfectScore;
@@ -79,6 +80,10 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogWarning("THE QUEEN WILL BEAT UR ASS UP !!!!!!!!!!!!!!!!!!!!!!!!!");
         }
+        if (kingAffection > 0.7f)
+        {
+            spriteSwaper.SwapSprite(0);
+        }
     }
 
     public void DeacreaseKingAffection()
@@ -90,6 +95,14 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogWarning("U ARE DEAD !!");
             OnEndGame();
+        }
+        if (kingAffection < 0.3f)
+        {
+            spriteSwaper.SwapSprite(2);
+        }
+        if (kingAffection < 0.5f)
+        {
+            spriteSwaper.SwapSprite(1);
         }
     }
 

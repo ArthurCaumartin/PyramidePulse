@@ -1,8 +1,5 @@
 using UnityEngine;
 using DG.Tweening;
-using TreeEditor;
-using Unity.VisualScripting;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class NoteBehavior : MonoBehaviour
 {

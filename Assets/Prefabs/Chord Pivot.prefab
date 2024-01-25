@@ -169,6 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  targetColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &5122847238705573989
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5459209745668726373
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8825698286326490716
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b89945b4213604190108e827709e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &3132539172666036283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -599,6 +607,10 @@ PrefabInstance:
     - target: {fileID: 6634235690721004398, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: m_Name
       value: Chord A
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845073010041017857, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8976849636594054761, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: Point
@@ -669,6 +681,10 @@ PrefabInstance:
     - target: {fileID: 6634235690721004398, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: m_Name
       value: Chord E
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845073010041017857, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8976849636594054761, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: Point
@@ -744,6 +760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chord R
       objectReference: {fileID: 0}
+    - target: {fileID: 8845073010041017857, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8976849636594054761, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: Point
       value: 
@@ -817,6 +837,10 @@ PrefabInstance:
     - target: {fileID: 6634235690721004398, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: m_Name
       value: Chord Z
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845073010041017857, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8976849636594054761, guid: d31478d4731bf614598fb3cf0528b1d6, type: 3}
       propertyPath: Point

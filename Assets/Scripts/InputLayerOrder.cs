@@ -3,7 +3,6 @@ using UnityEngine.InputSystem;
 
 public class InputLayerOrder : MonoBehaviour
 {
-
     public Color baseColor;
     public Color targetColor;
 
