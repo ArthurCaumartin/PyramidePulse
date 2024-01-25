@@ -8,12 +8,18 @@ public class ChordController : MonoBehaviour
     public int index;
     public Vector2 spawnPoint;
     public List<NoteBehavior> noteBehaviours;
+    public List<Vector3> startChordsPosition;
     private LineRenderer lineRenderer;
+
+    public int limitOfPointSelected;
+    public int pointIndex = 0;
+    public List<int> selectedIndexForWave;
+    //public float oui = 10;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         NoteBehavior note = collision.GetComponent<NoteBehavior>();
-        if(note)
+        if (note)
         {
             noteBehaviours.Add(note);
         }
@@ -37,17 +43,19 @@ public class ChordController : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.SetPosition(0, spawnPoint);
-        lineRenderer.SetPosition(1, transform.position);
+
+        for (int i = 0; i < lineRenderer.positionCount; i++)
+        {
+            lineRenderer.SetPosition(i, Vector3.Lerp(spawnPoint, transform.position, Mathf.InverseLerp(0, lineRenderer.positionCount, i)));
+            startChordsPosition.Add(lineRenderer.GetPosition(i));
+        }
     }
 
     public void ChordPressed(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (context.performed)
         {
-            
-
-            if(noteBehaviours.Count > 0)
+            if (noteBehaviours.Count > 0)
             {
                 float distance = Vector3.Distance(transform.position, noteBehaviours[0].transform.position);
                 //print("distance : " + distance);
