@@ -17,6 +17,6 @@ public class EventEntity : MonoBehaviour
     
     public void Reset()
     {
-        _animator.SetBool("Play", false);
+        _animator.speed = 0;
     }
 }

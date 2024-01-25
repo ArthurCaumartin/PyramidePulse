@@ -183,6 +183,7 @@ MonoBehaviour:
   dspSongTime: 0
   dpsPauseDelay: 0
   startPauseDps: 0
+  musicIndex: 0
   beatsPerLoop: 0.5
   completedLoops: 0
   loopPositionInBeats: 0

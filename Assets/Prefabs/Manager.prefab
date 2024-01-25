@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasManager: {fileID: 0}
+  eventManager: {fileID: 1613915395674284522}
+  spriteSwaper: {fileID: 0}
   totalScore: 0
   perfectScore: 100
   goodScore: 50
@@ -116,12 +118,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8fd6b966aca4f354c884b16d3a553f22, type: 3}
   - {fileID: 21300000, guid: f4d27a9808d6abe4b8cbc3e6d84a914c, type: 3}
   - {fileID: 21300000, guid: 51a9fc6e52d07234692e00e56a436a38, type: 3}
+  inputFeedBackList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   chordControllers:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   notePrefab: {fileID: 7635102613906824502, guid: ca2a0ca37fc68614f975890fc29e1504, type: 3}
+  playerSpriteSwaper: {fileID: 0}
 --- !u!1 &6899412798783408291
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,22 +175,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _queenEvent:
-    eventDuration: 0
-    pauseGame: 0
-    clearNotes: 0
-    canPlayerSpam: 0
-    entityList: []
+    eventDuration: 6
+    pauseGame: 1
+    isAlreadyCalled: 0
+    clearNotes: 1
+    canPlayerSpam: 1
+    passLvl2: 1
+    entityList:
+    - {fileID: 0}
   _quardEvent:
     eventDuration: 0
     pauseGame: 0
+    isAlreadyCalled: 0
     clearNotes: 0
     canPlayerSpam: 0
+    passLvl2: 0
     entityList: []
   _kingSlamEvent:
     eventDuration: 0
     pauseGame: 0
+    isAlreadyCalled: 0
     clearNotes: 0
     canPlayerSpam: 0
+    passLvl2: 0
     entityList: []
 --- !u!1 &7977140687934086865
 GameObject:
