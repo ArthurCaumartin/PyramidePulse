@@ -20,6 +20,7 @@ public class Conductor : MonoBehaviour
     public float dspSongTime;
     public float dpsPauseDelay;
     public float startPauseDps;
+    public ScriptableObjectDifficulty difficulty;
     public int musicIndex;
 
     [Header("Loop :")]
@@ -75,8 +76,10 @@ public class Conductor : MonoBehaviour
             completedLoops++;
             //! renvoie 1 ou 2
             // OnBoucleCompleted.Invoke((int)songPositionInBeats % 2);
-
-            OnBoucleCompleted.Invoke(secPerBeat);
+            for (int i = 0; i < difficulty.DifficultyLevel; i++)
+            {
+                OnBoucleCompleted.Invoke(secPerBeat);
+            }
             //print("loop beat");
         }
 

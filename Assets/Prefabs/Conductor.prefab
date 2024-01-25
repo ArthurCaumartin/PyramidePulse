@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicList:
   - {fileID: 11400000, guid: a3e131448395281478dfffedfdb7eaab, type: 2}
+  - {fileID: 11400000, guid: 11f65e472c22c704380ffae92d10c732, type: 2}
   - {fileID: 11400000, guid: b2ddd75d45234964a953c1efc247af74, type: 2}
   songBpm: 117
   secPerBeat: 0
@@ -183,7 +184,9 @@ MonoBehaviour:
   dspSongTime: 0
   dpsPauseDelay: 0
   startPauseDps: 0
-  beatsPerLoop: 0.5
+  difficulty: {fileID: 11400000, guid: bf1c71cb9d90a124eaa07e8ef77a3196, type: 2}
+  musicIndex: 0
+  beatsPerLoop: 1
   completedLoops: 0
   loopPositionInBeats: 0
   audioSource: {fileID: 4436324056371399438}
