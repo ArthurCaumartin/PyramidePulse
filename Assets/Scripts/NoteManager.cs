@@ -7,6 +7,7 @@ public class NoteManager : MonoBehaviour
     public static NoteManager instance;
     public List<GameObject> notesList;
     public List<Sprite> spriteList;
+    public List<InputFeedBack> inputFeedBackList;
     [SerializeField] private ChordController[] chordControllers;
     [SerializeField] private GameObject notePrefab;
     [SerializeField] private SpriteSwaper playerSpriteSwaper;
@@ -18,7 +19,7 @@ public class NoteManager : MonoBehaviour
 
     public void KillAllNotes()
     {
-        if(notesList.Count != 0)
+        if (notesList.Count != 0)
         {
             foreach (GameObject note in notesList)
             {
@@ -34,28 +35,33 @@ public class NoteManager : MonoBehaviour
             notesList.Remove(objectToRemove);
         }
 
-        if(isSeflDestroy)
+        if (isSeflDestroy)
             GameManager.instance.DeacreaseKingAffection();
     }
 
     public void OnInputPressed(int index, NoteBehavior note = null, float distance = 1000)
     {
-        if(GameManager.instance.canPlayerSpam)
+        if (GameManager.instance.canPlayerSpam)
         {
             GameManager.instance.AddScore(10, chordControllers[index].transform.position);
             return;
         }
 
-        if(note == null)
+        if (note == null)
         {
+            inputFeedBackList[index].FailedInput();
             GameManager.instance.DeacreaseKingAffection();
             //print("pas de note");
         }
         else if (note)
         {
+            inputFeedBackList[index].DefaultInput();
             GameManager.instance.IncreaseKingAffection();
             GameManager.instance.AddScore(distance, chordControllers[index].transform.position);
-            playerSpriteSwaper.SwapSprite(index);
+            if (playerSpriteSwaper)
+            {
+                playerSpriteSwaper.SwapSprite(index);
+            }
             Destroy(note.gameObject);
             // print(index);
         }
@@ -64,14 +70,14 @@ public class NoteManager : MonoBehaviour
     //! Call by conductor Event
     public void SpawnNote()
     {
-        if(GameManager.instance.canPlayerSpam)
+        if (GameManager.instance.canPlayerSpam)
             return;
         int index = Random.Range(0, chordControllers.Length);
         GameObject actualObject = Instantiate(notePrefab, transform);
         actualObject.GetComponent<NoteBehavior>().Initialize(chordControllers[index].spawnPoint, chordControllers[index].transform.position, Conductor.instance.GetSecondPerBeat(), this);
         notesList.Add(actualObject);
 
-        if(spriteList.Count > 0)
+        if (spriteList.Count > 0)
             actualObject.GetComponentInChildren<SpriteRenderer>().sprite = spriteList[index];
     }
 
