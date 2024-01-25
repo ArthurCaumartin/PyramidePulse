@@ -32,6 +32,7 @@ public class EventManager : MonoBehaviour
         {
             return;
         }
+
         _queenEvent.isAlreadyCalled = true;
         for (int i = 0; i < _queenEvent.entityList.Count; i++)
         {
@@ -78,10 +79,12 @@ public class EventManager : MonoBehaviour
 
     IEnumerator GamePause(float time)
     {
+        print("Pause Game !");
         NoteManager.instance.PauseNotes();
         Conductor.instance.Pause(true);
         yield return new WaitForSeconds(time);
         NoteManager.instance.UnpauseNotes();
         Conductor.instance.Pause(false);
+        print("Unpause Game !");
     }
 }

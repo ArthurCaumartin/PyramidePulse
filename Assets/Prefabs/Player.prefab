@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1130026561863651999}
   - component: {fileID: 5245768456612471998}
   - component: {fileID: 5532941174385254594}
+  - component: {fileID: 8468149327380660644}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -104,6 +105,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8468149327380660644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596978842195432581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7b24c38c131de468eb5a0368574079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conductor: {fileID: 0}
+  growingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.6904078
+      outSlope: 2.6904078
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08616447
+    - serializedVersion: 3
+      time: 0.3565072
+      value: 0.6705261
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  growingValue: 1.1
+  growingTime: 0.5
 --- !u!1 &4830255535551020826
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +276,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 55
+  m_SortingOrder: 4
   m_Time: 0.1
   m_PreviewTimeScale: 1
   m_Parameters:
