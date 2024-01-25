@@ -55,7 +55,7 @@ public class Conductor : MonoBehaviour
     {
         instance = this;
 
-        Initialize(0);
+        Initialize(Random.Range(0, 2));
     }
 
     void Update()
