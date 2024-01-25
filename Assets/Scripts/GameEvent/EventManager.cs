@@ -73,7 +73,7 @@ public class EventManager : MonoBehaviour
     IEnumerator StartNextLevel(float time)
     {
         yield return new WaitForSeconds(time);
-        Conductor.instance.Initialize(1);
+        Conductor.instance.Initialize(2);
     }
 
     IEnumerator PlayerSpam(float time)
